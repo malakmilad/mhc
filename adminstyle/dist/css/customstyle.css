@@ -1,0 +1,26 @@
+/* Custom Style */
+.main-header .logo , .main-header .sidebar-toggle { float:left } 
+.main-header > .navbar { margin-left:230px; margin-right:auto; -webkit-transition: margin-left 0.3s ease-in-out; -o-transition: margin-left 0.3s ease-in-out; transition: margin-left 0.3s ease-in-out; }
+.main-header .navbar-custom-menu { float:right; }
+.main-sidebar { left:0; }
+.content-wrapper, .main-footer { margin-left:230px; margin-right: auto; }
+.navbar-nav > .user-menu .user-image { float:left; margin-right:10px; margin-left:auto }
+.navbar-custom-menu > .navbar-nav > li > .dropdown-menu { right: 0;
+    left: auto; }
+.margin-50 { margin-left: 50px !important; }
+
+.box-header > .box-tools { right: 10px; }
+
+@media (min-width: 768px){
+    .sidebar-mini.sidebar-collapse .main-header .navbar {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 767px){
+    .main-header > .navbar { margin-left:0; margin-right:0; }
+    .main-header .logo, .main-header .sidebar-toggle { float:none; }
+    .content-wrapper, .main-footer { margin-left:0; }
+    .sidebar-open .main-sidebar { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+    .sidebar-open .content-wrapper, .sidebar-open .main-footer { -webkit-transform: translate(230px, 0); -ms-transform: translate(230px, 0); -o-transform: translate(230px, 0); transform: translate(230px, 0); }
+}

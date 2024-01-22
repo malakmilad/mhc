@@ -1,0 +1,35 @@
+@extends ('admin.layouts.app')
+
+@section('title', 'إضافه ملف الأدويه')
+
+@section('admin-content')
+  <form action="{{route('medical.sheet.store')}}" method="post" enctype="multipart/form-data" id="saveDoctor">
+  {{ csrf_field() }}
+    <div class="form-group">
+      <label>ملف الاسماء</label>
+      <input type="file" name="file" class="form-control" required>
+    </div>
+  </form>
+@endsection
+
+@section ('actions')
+    <a href="{{ route('diseases.index') }}" class="btn btn-link btn-float has-text">
+        <i class="icon-forward2 text-danger"></i>
+        <span>إلغاء</span>
+    </a>
+
+    <button type="submit" href="{{ route('diseases.store') }}" class="btn btn-link btn-float has-text submit">
+        <i class="icon-user-plus text-primary"></i>
+        <span>حفظ التغييرات</span>
+    </button>
+@endsection
+
+@push('scripts')
+    <script src="{{ asset('js/plugins/buttons/ladda.min.js') }}"></script>
+    <script>
+        $('.submit').click(function(e)
+        {
+            $('#saveDoctor').submit();
+        });
+    </script>
+@endpush

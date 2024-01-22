@@ -1,0 +1,16 @@
+/* Custom Style Rtl */
+.main-header .logo , .main-header .sidebar-toggle { float:right } 
+.main-header > .navbar { margin-right:230px; margin-left:auto; -webkit-transition: margin-right 0.3s ease-in-out; -o-transition: margin-right 0.3s ease-in-out; transition: margin-right 0.3s ease-in-out; }
+.main-header .navbar-custom-menu { float:left; }
+.main-sidebar { right:0; }
+.content-wrapper , .main-footer { margin-right:230px; margin-left: auto; }
+.navbar-nav > .user-menu .user-image { float:right; margin-left:10px; margin-right:auto }
+.navbar-custom-menu > .navbar-nav > li > .dropdown-menu { left: 0;
+    right: auto; }
+.margin-50 { margin-right: 50px !important; }
+
+@media (min-width: 768px){
+    .sidebar-mini.sidebar-collapse .main-header .navbar {
+        margin-left: 0px;
+    }
+}
